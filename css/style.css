@@ -1577,7 +1577,7 @@ footer p {
 
 /*+++++++++main-inner-caption++++++++++++++*/
 
-.main-inner-caption h1 {
+.main-inner-caption {
     font-size: 31px;
     line-height: 31px;
     color: #32425c;
@@ -1586,3 +1586,274 @@ footer p {
     padding: 34px 30px;
     margin-bottom: 20px;
 }
+
+
+/*+++++++ФИЛЬТР++++++++++*/
+
+
+.main-inner-filter {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.inner-filter-caption {
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+    padding-left: 19px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+
+.main-price h3 {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    padding: 13px 0;
+    margin: 0;
+    
+}
+
+
+.main-range-control {
+    position: relative;
+    background-color: #f7f3ec;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 39px 20px;
+    margin-bottom: 11px;
+    
+
+}
+
+.control-scale {
+    width: 160px;
+    height: 2px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #00ca74 80%, #d7dcde 20%)
+    
+}
+
+.control-scale .toggle {
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 1px #d7d4ce;
+}
+
+
+.max-toggle {
+    top: 30px;
+    left: 140px;
+}
+
+.min-toggle {
+    top: 30px;
+    left: 20px;
+}
+
+
+.min-toggle::before, .max-toggle::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ababab;
+    top: 8px;
+    left: 8px;
+} 
+
+/*ПОЛЯ ДИАПАЗОНА ЦЕНЫ*/
+
+
+.price-control-left {
+    float: left;
+    margin-bottom: 25px;
+    
+}
+
+.main-price-control span {
+    display: block;
+    float: left;
+    margin-left: 11px;
+    line-height: 40px;
+   
+    
+    
+}
+
+.price-control-right {
+    float: right;
+}
+
+.main-price-control input {
+    width: 95px;
+    height: 38px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #283136;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+
+.main-price .price {
+    border-bottom: 1px solid #e5e5e5;
+    
+}
+
+.main-price-producers {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/*ЧЕКБОКСЫ*/
+
+.producers-checkbox,
+.power-radio{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.producers-checkbox:last-child,
+.power-radio:last-child {
+    margin-bottom: 20px;
+}
+
+.producers-checkbox input[type="checkbox"],
+.power-radio input[type="radio"] {
+    display: none;
+}
+
+
+
+
+.producers-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #c1c1c1;
+    border-radius: 5px;
+    left: 0px;
+    
+}
+
+
+.producers-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 2px;
+    background-color: #c1c1c1;
+    transform: rotate(-55deg);
+    top: 8px;
+    left: 4px;
+}
+
+.producers-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #c1c1c1;
+    transform: rotate(65deg);
+    top: 10px;
+    left: 1px;
+}
+
+
+/*РАДИОБАТТОНЫ*/
+
+.power-radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 4px solid #c1c1c1;
+    border-radius: 50%;
+    left: 0;
+}
+
+.power-radio input[type="radio"]:checked + .radio-indicator::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    top: 5px;
+    left: 5px;
+    
+}
+
+.main-price-power {
+    margin-bottom: 75px;
+    
+}
+
+.main-price-btn {
+    font-size: 13px ;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    background-color: #fff;
+    padding: 11px 38px;
+    outline: none;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-inner-catalog {
+    float: left;
+    width: 700px;
+}
+
+
+
+
+
+
+
