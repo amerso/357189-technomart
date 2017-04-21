@@ -1830,20 +1830,7 @@ footer p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*СОРТИРОВКА*/
 
 
 .main-inner-catalog {
@@ -1851,9 +1838,265 @@ footer p {
     width: 700px;
 }
 
+.main-inner-sorting {
+   background-color: #f7f3ec;
+}
+
+.main-inner-sorting ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    
+    
+    
+    
+}
+
+.main-inner-sorting li {
+    display: inline-block;
+    text-align: top;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float: left;
+    
+    
+    
+}
+
+.main-inner-sorting li > span {
+   padding-left: 19px;
+    margin-right: 140px;
+}
+
+.main-inner-sorting a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.4;
+    border-bottom: 1px dotted #ee3643;
+}
+
+.main-inner-sorting  li:nth-child(2) > a {
+    color: #ee3643;
+    opacity: 1;
+    border-bottom: none;
+    padding-right: 70px;
+    
+}
+
+.main-inner-sorting  li:nth-child(3) {
+    padding-right: 65px;
+}
 
 
+/*СПИСОК ТОВАРОВ*/
 
+.inner-catalog {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    
+}
+
+.inner-catalog li {
+    position: relative;
+    width: 218px;
+    min-height: 318px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    
+}
+
+.inner-catalog li:nth-child(3),
+.inner-catalog li:nth-child(6),
+.inner-catalog li:nth-child(9) {
+    margin-right: 0;
+}
+
+.inner-catalog img {
+    display: block;
+    margin-bottom: 44px;
+    
+   
+}
+
+.inner-catalog h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.inner-catalog span {
+    display: block;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #999;
+    text-decoration: line-through;
+    text-align: center;
+    margin-bottom: 12px;
+    
+    
+}
+
+.inner-catalog .last-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #fff;
+    background-color: #ee3643;
+    margin: 0;
+    padding: 0;
+    padding: 13px 16px 13px 37px;
+    margin-left: 43px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.inner-catalog .last-price::after {
+    content: "";
+    position: absolute;
+    border: 22px solid transparent;
+    border-left: 22px solid #ee3643;
+    right: -44px;
+    top: 0px;
+}
+
+.inner-catalog .last-price:nth-child(3),
+.inner-catalog .last-price:nth-child(6),
+.inner-catalog .last-price:nth-child(9){
+    margin-top: 26px;
+}
+
+
+/*ВСПЛЫВАЮЩИЕ ОКНА*/
+
+.inner-hidden-links {
+    position: absolute;
+    width: 136px;
+    top: 43px;
+    left: 41px;
+    display: none;
+    
+}
+
+.inner-hidden-buy {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 45px 9px 49px;
+    margin-bottom: 8px;
+    background-color: #63a63e;
+    border-bottom: 3px solid #367315;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    
+    
+}
+
+.inner-hidden-buy:hover {
+    background: #5fbb2d;
+}
+
+.inner-hidden-buy:active {
+    background: #518534;
+    border-bottom: 3px solid #518534;
+}
+
+.inner-hidden-tab {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    color: #32425c;
+    text-transform: uppercase;
+    padding: 9px 29px 7px 33px;
+    border: 3px solid #63a63e;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.inner-hidden-tab:hover {
+    border: 3px solid #32425c;
+}
+
+.inner-hidden-tab:active {
+    border: 3px solid #32425c;
+    opacity: 0.5;
+}
+
+.inner-catalog li:hover > .inner-hidden-links {
+    display: block;
+}
+
+.inner-catalog li:hover > img {
+    opacity: 0;
+}
+
+
+/*PAGES*/
+
+.inner-pages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+    font-size: 0;
+    margin-bottom: 60px;
+    
+}
+
+.inner-pages li {
+    display: inline-block;
+    text-align: top;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin-right: 10px;
+    
+}
+
+.inner-pages a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 17px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+  
+    
+}
+
+.inner-pages .active {
+    background-color: #ee3643;
+}
+
+.inner-pages .next {
+    padding: 13px 30px;
+}
 
 
 
