@@ -32,17 +32,16 @@ body {
     
 }
 
-.header-up-block .header-link {
+.header-link {
     display: block;
     float: left;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 22px;
+    padding: 13px 55px; 
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
     background: #ee3643;
-    padding: 12px 52px;
-    
     text-decoration: none;
     box-shadow: 0 5px 0 #b52933;
 }
@@ -59,45 +58,31 @@ body {
 
 .search {
     position: relative;
-    margin: 0;
-    padding: 0;
+    float: left;
+    width: 212px;
     padding-left: 49px;
-    float: left;
-    margin-right: 17px;
-    width: 221px;
-    
-}
-
-
-
-.search input {
-    display: block;
-    float: left;
-    background: #293449;
     padding-top: 14px;
     padding-bottom: 16px;
-    width: 221px;
+    padding-right: 1x;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #293449;
+    background-image: url();
+    background-repeat: no-repeat;
     border: none;
-    outline: none;
+    overflow: hidden;
 }
 
 
-.search::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: #f6b22d;
-    top: 11px;
-    left: 18px;
-    
-}
-
-.search:hover, .search input:hover {
+.search:hover {
     background: #212a3a;
 }
 
+ .search:focus {
+    background: #fff;
+     color: #000;
+}
 
 
 input::-webkit-input-placeholder {
@@ -126,9 +111,9 @@ input:-moz-placeholder {
     display: block;
     float: left;
     color: #fff;
-    width: 96px;
+    width: 97px;
     text-decoration: none;
-    padding-left: 27px;
+    padding-left: 54px;
     padding-bottom: 14px;
     padding-top: 14px;
     padding-right: 10px;
@@ -146,7 +131,7 @@ input:-moz-placeholder {
     height: 17px;
     background: #f6b22d;
     top: 12px;
-    left: 0px;
+    left: 20px;
 }
 
 .header-up-bookmark:hover {
@@ -195,15 +180,15 @@ input:-moz-placeholder {
 
 .header-up-order {
     display: block;
-    float: left;
+    float: right;
     color: #fff;
     padding-left: 21px;
     padding-right: 22px;
-    background: #63a63e;
-    padding-bottom: 14px;
-    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-top: 13px;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 18px;
+    background: #63a63e;
     text-decoration: none;
     
 }
